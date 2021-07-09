@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Just 쇼핑몰</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/jquery-1.12.3.js"></script>
+    <script src="script/script.js"></script>
+</head>
+
+<body>
+
+    <div id="wrap">
+        <header id="header" class="flex-container">
+            <div id="headerLogo">
+                <!-- 로고가 들어갈 자리 입니다. -->
+            </div> <!-- div#headerLogo -->
+            <nav id="headerGNB">
+                <ul id="mainMenu" class="flex-container">
+                    <li class="mainLi">
+                        <a href="#">탑</a>
+                        <ul class="subMenu">
+                            <li class="subLi"><a href="#">블라우스</a></li>
+                            <li class="subLi"><a href="#">티</a></li>
+                            <li class="subLi"><a href="#">셔츠</a></li>
+                            <li class="subLi"><a href="#">니트</a></li>
+                        </ul>
+                    </li>
+                    <li class="mainLi">
+                        <a href="#">아우터</a>
+                        <ul class="subMenu">
+                            <li class="subLi"><a href="#">자켓</a></li>
+                            <li class="subLi"><a href="#">코트</a></li>
+                            <li class="subLi"><a href="#">가디건</a></li>
+                            <li class="subLi"><a href="#">머플러</a></li>
+                        </ul>
+                    </li>
+                    <li class="mainLi">
+                        <a href="#">팬츠</a>
+                        <ul class="subMenu">
+                            <li class="subLi"><a href="#">청바지</a></li>
+                            <li class="subLi"><a href="#">짧은바지</a></li>
+                            <li class="subLi"><a href="#">긴바지</a></li>
+                            <li class="subLi"><a href="#">레깅스</a></li>
+                        </ul>
+                    </li>
+                    <li class="mainLi">
+                        <a href="#">악세서리</a>
+                        <ul class="subMenu">
+                            <li class="subLi"><a href="#">귀고리</a></li>
+                            <li class="subLi"><a href="#">목걸이</a></li>
+                            <li class="subLi"><a href="#">반지</a></li>
+                            <li class="subLi"><a href="#">팔찌</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav> <!-- nav#headerGNB -->
+        </header> <!-- header#header -->
+
+        <main id="main">
+            <div id="slideShuttle" class="flex-container">
+                <div id="slide1">
+                    <img src="images/img1.jpg" alt="JUST 쇼핑몰 홈페이지 새단장">
+                    <p>JUST 쇼핑몰 홈페이지 새단장</p>
+
+                </div>
+                <div id="slide2">
+                    <img src="images/img2.jpg" alt="이달의 쇼핑 이벤트">
+                    <p>이달의 쇼핑 이벤트</p>
+
+                </div>
+                <div id="slide3">
+                    <img src="images/img3.jpg" alt="장바구니 할인 이벤트">
+                    <p>장바구니 할인 이벤트</p>
+
+                </div>
+            </div> <!-- div#slideShuttle -->
+
+            <div id="mainContents" class="flex-container">
+                <div id="bbs">
+                    <button type="button" id="noticeBtn" class="bbsBtn tabSelected">공지사항</button>
+                    <button type="button" id="galleryBtn" class="bbsBtn">갤러리</button>
+                    <table id="notice">
+                        <tbody>
+                            <tr>
+                                <td id="popUp">신규회원 대상 할인 이벤트 안내</td>
+                                <td>2020.03.14</td>
+                            </tr>
+                            <tr>
+                                <td>3월 재입고 품목을 알려드립니다.</td>
+                                <td>2020.03.14</td>
+                            </tr>
+                            <tr>
+                                <td>반품/환불 규정에 대해 알려드립니다.</td>
+                                <td>2020.03.14</td>
+                            </tr>
+                            <tr>
+                                <td>S/S 시즌 신규 의류 신상품 안내</td>
+                                <td>2020.03.14</td>
+                            </tr>
+                        </tbody>
+                    </table>  <!--table#notice end -->
+
+                    <table id="gallery">
+                        <td><img src="images/icon1.jpg" alt="갤러리이미지1"></td>
+                        <td><img src="images/icon2.jpg" alt="갤러리이미지2"></td>
+                        <td><img src="images/icon3.jpg" alt="갤러리이미지3"></td>
+                    </table> <!-- table#gallery -->
+                </div> <!-- div#bbs -->
+                <div id="banner">
+                    <img src="images/banner.jpg" alt="배너이미지">
+                </div> <!-- div#banner-->
+                <div id="shortCut">
+                    <img src="images/shortcut.jpg" alt="바로가기이미지">
+                </div> <!-- div#shortCut -->
+            </div> <!-- div#mainContents -->
+        </main> <!-- main#main -->
+
+        <footer id="footer" class="flex-container">
+            <div id="footerLogo">
+                <!-- 로고가 들어갈 자리 입니다. -->
+            </div> <!-- div#footerLogo -->
+            <div id="copyright">
+                &copy; COPYRIGHT¨Ï by JUST Shop. ALL RIGHTS RESERVED
+            </div> <!-- div#copyright -->
+            <div id="SNS">
+                <a href="#" id="facebook"></a>
+                <a href="#" id="twitter"></a>
+                <a href="#" id="instagram"></a>
+            </div> <!-- div#SNS -->
+        </footer> <!-- footer#footer -->
+    </div> <!-- div#wrap -->
+
+    <div id="layerPopBG">
+        <div id="layerPop">
+            <p>이벤트 안내</p>
+            <pre>
+안녕하세요! JUST쇼핑몰입니다.
+고객님들의 성원에 보답하는 JUST쇼핑몰이 되고자
+신규회원 20% 할인 이벤트를 실시하고 있습니다.
+웹과 모바일 가입회원 대상이며,
+서비스만족을 위해 꾸준히 노력하겠습니다.
+            </pre>
+            <button type="button" id="layer_close">close</button>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,300 @@
+@charset "UTF-8";
+@import url(reset.css);
+
+/* div#wrap */
+div#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* div#wrap */
+
+/* header#header */
+header#header {
+    width: 1200px;
+    height: 100px;
+}
+
+div#headerLogo {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    background-image: url(../images/headerLogo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav#headerGNB {
+    width: 100%;
+    flex: 1;
+}
+
+ul#mainMenu {
+    position: relative;
+    float: right;
+    margin-top: 54px;
+    margin-right: 60px;
+}
+
+li.mainLi {
+    width: 180px;
+}
+
+ul.subMenu {
+    width: 180px;
+    position: absolute;
+    display: none;
+    z-index: 10;
+    background-color: #fff;
+}
+
+li.mainLi a,
+li.subLi a {
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+}
+
+li.mainLi > a {
+    font-size: 18px;
+    font-weight: bold
+}
+
+li.subLi > a {
+    font-size: 12px;
+}
+
+li.mainLi > a:hover,
+li.subLi > a:hover {
+    color: #fff;
+    background-color: #61d95c;
+}
+
+/* header#header */
+
+/* main#main */
+main#main {
+    width: 1200px;
+    overflow: hidden;
+}
+
+/* slide 기능 구현 */
+div#slideShuttle {
+    width: 3600px;
+}
+
+#slideShuttle img {
+    width: 1200px;
+}
+
+#slideShuttle > div {
+    position: relative;
+}
+
+#slideShuttle > div p {
+    width: 500px;
+    height: 100px;
+    border: 5px solid #aaa;
+    border-radius: 250px;
+    line-height: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 33px;
+    background-color: rgba(255, 255, 255, 0.7);
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* slide 기능 구현 */
+
+/* mainContents (bbs, banner, shortcu) 구현 */
+div#mainContents {
+    width: 1200px;
+    height: 200px;
+    justify-content: space-between;
+}
+
+#mainContents > div {
+    flex: 1;
+    border: 3px solid #ddd;
+    border-right: none;
+}
+
+#mainContents > div:last-child {
+    border-right: 1px solid #ddd;
+}
+
+div#bbs {
+    padding: 17px 15px;
+}
+
+button.bbsBtn {
+    color: #fff;
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    font-size: 15px;
+    background-color: #978eff;
+    position: relative;
+    left: 40px;
+    cursor: pointer;
+}
+
+button.bbsBtn:first-child {
+    left: 44px;
+}
+
+button.tabSelected {
+    color: #333;
+    height: 31px;
+    font-weight: bold;
+    border: 1px solid #aaa;
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+    top: 1px;
+}
+
+div#bbs table {
+    width: 340px;
+    height: 130px;
+    border: 1px solid #aaa;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#bbs table td {
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#bbs table#gallery {
+    display: none;
+}
+
+#gallery img {
+    padding: 2px;
+}
+
+/* mainContents (bbs, banner, shortcu) 구현 */
+
+
+div#banner,
+div#shortCut {
+    padding: 10px;
+    text-align: center;
+}
+
+#banner img,
+#shortCut img {
+    height: 160px;
+    padding-top: 10px;
+}
+
+/* main#main */
+
+
+/* footer#footer */
+footer#footer {
+    width: 1200px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+#footer div#footerLogo {
+    width: 100px;
+    background-image: url(../images/footerLogo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#footer div#copyright {
+    flex: 1;
+    font-size: 12px;
+}
+
+#footer div#SNS {
+    width: 300px;
+}
+
+#SNS a {
+    width: 25px;
+    height: 25px;
+    margin: 35px 10px auto;
+    display: inline-block;
+}
+
+#SNS a:nth-child(1) {
+    background-image: url(../images/sns1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#SNS a:nth-child(2) {
+    background-image: url(../images/sns2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#SNS a:nth-child(3) {
+    background-image: url(../images/sns3.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* footer#footer */
+
+/* layerPopUp */
+div#layerPopBG {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#layerPopBG > div#layerPop {
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    border: 2px solid #1d5d76;
+    background-color: rgba(255, 255, 255);
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#layerPop p {
+    padding: 30px 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+#layerPop pre {
+    font-size: 16px;
+    line-height: 35px;
+}
+
+#layerPop button {
+    color: #aaa;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    float: right;
+
+}
+
+/* layerPopUp */
