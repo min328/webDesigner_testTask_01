@@ -24,7 +24,7 @@ $(function () {
     setInterval(fn_Slide, 3000);
     function fn_Slide(){
         $("div#slideShuttle").animate(
-            {"margin-left" : "-1200px"}
+            {"margin-top" : "-300px"}
             ,3000
             ,function(){
                 $("div#slideShuttle>div:first-child").insertAfter("div#slideShuttle>div:last-child");
